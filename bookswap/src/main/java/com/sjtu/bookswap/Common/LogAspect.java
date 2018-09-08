@@ -23,7 +23,7 @@ public class LogAspect {
     
     ThreadLocal<Long> startTime = new ThreadLocal<>();
 
-    @Pointcut("execution(public * com.sjtu.donate.Controller..*.*(..))")
+    @Pointcut("execution(public * com.sjtu.bookswap.Controller..*.*(..))")
     public void log() {
     }
 

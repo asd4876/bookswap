@@ -22,7 +22,7 @@ public class AppSettings {
     
     public static final String ERROR_WRONG_USER_ID = "Error: wrong userId.";
     
-    public static final boolean BUILD_DATABASE = false;
+    public static final boolean BUILD_DATABASE = true;
     
     public static int LOG_FLAG = 1;
 	

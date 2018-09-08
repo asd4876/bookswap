@@ -16,8 +16,6 @@ public class User {
 
     private String password;
 
-    private String name;
-
     private String email;
 
     @Column(length=500)
@@ -32,7 +30,6 @@ public class User {
     public User(String account, String password){
         this.account = account;
         this.password = password;
-        this.name = "";
         this.email = "";
         this.address = "";
         this.phone = "";
@@ -44,14 +41,6 @@ public class User {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getEmail() {
