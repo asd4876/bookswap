@@ -21,5 +21,5 @@ public class AppSettings {
     
     public static final boolean BUILD_DATABASE = true;
     
-    public static int LOG_FLAG = 1;
+    public static int LOG_FLAG = 2;
 }

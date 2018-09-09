@@ -8,6 +8,8 @@ import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.sjtu.bookswap.Common.AppSettings;
+
 @SpringBootApplication
 @Configuration
 public class BookswapApplication {
@@ -21,6 +23,7 @@ public class BookswapApplication {
         MultipartConfigFactory factory = new MultipartConfigFactory();  
         factory.setMaxFileSize("102400KB"); 
         factory.setMaxRequestSize("102400KB");  
+        factory.setLocation(AppSettings.IMAGE_SAVE_PATH);
         return factory.createMultipartConfig();  
     }  
 }
